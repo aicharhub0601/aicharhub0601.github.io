@@ -1,0 +1,485 @@
+/* Stylesheet for the hand-built static character pages (`lib/character-seo-page.ts`).
+   ONE file, cached once, shared by ~51k pages — so it is written for legibility,
+   not for bytes.
+
+   These pages live OUTSIDE Tailwind and outside `globals.css`, so the tokens
+   below are a hand-mirror of the `@theme` block in `src/app/[locale]/globals.css`.
+   That makes this file the second consumer of the design system and the one place
+   it can silently drift: change a token there and change it here, in the same
+   commit. DESIGN.md ("Second token consumer") records the pairing. */
+:root {
+  color-scheme: dark;
+
+  /* ── Mirrors globals.css @theme ── */
+  --bg: #0b0d10;          /* --color-bg */
+  --bg-2: #111419;        /* --color-bg-2 */
+  --panel: #171b21;       /* --color-surface */
+  --surface-2: #20262e;   /* --color-surface-2 */
+  --line: #2b323b;        /* --color-line */
+  --line-2: #3c4550;      /* --color-line-2 */
+  --brand: #e3b341;       /* --color-brand — prestige gold */
+  --brand-deep: #c8922c;  /* --color-brand-deep */
+  --soft: #f2d180;        /* --color-brand-soft */
+  --text: #f1eee7;        /* --color-text */
+  --dim: #aeb4bd;         /* --color-text-dim */
+  --mute: #929aa4;        /* --color-text-mute */
+  --on-brand: #0b0d10;    /* --color-primary-foreground */
+
+  /* Eased editorial radius scale (--radius / --radius-sm in globals.css). The
+     web fonts are next/font-hashed and unreachable from a static file, so these
+     are the fallback stacks DESIGN.md already declares for each family. */
+  /* Aliases under the `globals.css` @theme names.
+     `renderTraitRadarSvg` is shared with the React detail page and emits
+     `stroke="var(--color-line)"` and friends — the Tailwind token namespace.
+     These pages are outside Tailwind and name the same values `--line`,
+     `--brand` and so on, so those `var()`s resolved to nothing, `stroke` fell
+     back to its initial `none`, and the whole chart rendered invisible: markup
+     present, not a pixel drawn. Aliasing here rather than changing the shared
+     renderer keeps ONE radar for both surfaces. Anything new the renderer
+     reaches for has to be added here too — this file is the second token
+     consumer and the one place the design system can silently drift. */
+  --color-brand: var(--brand);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-text-dim: var(--dim);
+
+  --radius: 6px;
+  --radius-sm: 2px;
+  --font-display: "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-label: ui-monospace, "SF Mono", Menlo, monospace;
+
+  font-family: var(--font-body);
+}
+
+* { box-sizing: border-box }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: inherit }
+
+/* Visually hidden, still read by crawlers and screen readers. Carries the GEO
+   summary paragraph `CLAUDE.md:200` requires of `/characters/[id]`. `clip-path`
+   plus the 1px box rather than `display:none` or `visibility:hidden`, both of
+   which remove the text from the accessibility tree and from what a crawler
+   treats as page content — which would defeat the point of the paragraph. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Single global focus indicator. The previous stylesheet defined none at all, so
+   every link and button here was invisible to keyboard users. */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* `viewport-fit=cover` is set in the page's viewport meta, so the notch and the
+   home indicator overlap the layout unless each edge pays the inset itself. */
+.site-header, main, footer {
+  width: min(1120px, calc(100% - 32px));
+  margin: auto;
+}
+
+.site-header {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: env(safe-area-inset-top);
+  border-bottom: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.site-header > a {
+  color: var(--brand);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 18px;
+  font-family: var(--font-label);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.site-header nav a, footer a {
+  color: var(--dim);
+  text-decoration: none;
+}
+
+.site-header nav a:hover, footer a:hover { color: var(--brand) }
+
+main { padding: 28px 0 64px }
+
+.crumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: var(--mute);
+  font-family: var(--font-label);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+}
+
+.crumbs a { color: var(--brand) }
+
+.profile {
+  display: grid;
+  grid-template-columns: minmax(180px, 320px) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  text-align: center;
+  color: var(--mute);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 56px;
+}
+
+.eyebrow, dt {
+  color: var(--brand);
+  font-family: var(--font-label);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 7vw, 72px);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin: 8px 0 24px;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  margin: 28px 0 12px;
+}
+
+.description {
+  font-size: 17px;
+  white-space: pre-line;
+  color: var(--dim);
+  max-width: 760px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.stats div { min-width: 100px }
+.stats dt, .stats dd { margin: 0 }
+.stats dd { font-size: 14px }
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+/* A tag is a link only when its hub page was actually prerendered — see
+   `buildCharacterSeoHtml`. Padding sits on the inner node so a linked and an
+   unlinked chip are the same size, and the two are told apart by text colour
+   rather than by hover alone (a touch device never hovers). */
+.tags li {
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-label);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tags li > a, .tags li > span {
+  display: block;
+  padding: 8px 11px;
+  text-decoration: none;
+}
+
+.tags li > a { color: var(--dim) }
+.tags li > span { color: var(--mute) }
+.tags li > a:hover { color: var(--brand) }
+.tags li:has(> a):hover { border-color: var(--brand-deep) }
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-family: var(--font-label);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.button:hover { border-color: var(--brand); color: var(--brand) }
+
+.button.primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--on-brand);
+}
+
+.button.primary:hover {
+  background: var(--brand-deep);
+  border-color: var(--brand-deep);
+  color: var(--on-brand);
+}
+
+.about h2, .similar h2, .threads h2, .radar h2, .opening h2 { margin-top: 32px }
+
+/* The radar is an inline SVG at a fixed 420px square. `max-width` lets it shrink
+   on a phone; `height:auto` with the viewBox keeps it square while it does. */
+.radar-chart svg {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+.radar-caption {
+  margin: 8px 0 0;
+  max-width: 420px;
+  color: var(--mute);
+  font-size: 13px;
+}
+
+/* One row per thread: title, then the reply count as secondary weight. Only
+   the ~1% of characters that have an ACTIVE thread render this at all. */
+.threads ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.threads li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.threads li:last-child { border-bottom: 0 }
+
+.threads a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.threads a:hover { color: var(--brand); text-decoration: underline }
+
+.threads .replies {
+  margin-left: auto;
+  color: var(--mute);
+  font-family: var(--font-label);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.similar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.similar a {
+  color: var(--brand);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 17px;
+}
+
+.similar a:hover { color: var(--soft); text-decoration: underline }
+
+.discover {
+  margin-top: 64px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.discover h2 { margin-top: 0 }
+.discover p { color: var(--dim) }
+.discover a { color: var(--brand); font-weight: 700 }
+
+footer {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding: 24px 0 48px;
+  padding-bottom: calc(48px + env(safe-area-inset-bottom));
+  color: var(--mute);
+  font-family: var(--font-label);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+footer a, footer button {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--dim);
+  font: inherit;
+  /* `font: inherit` does not carry `text-transform`, and the UA stylesheet
+     resets it on form controls — so the button needs it spelled out or it is
+     the one mixed-case item in an uppercase row. */
+  text-transform: uppercase;
+  letter-spacing: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover, footer button:hover { color: var(--brand) }
+footer span { margin-left: auto; text-transform: none; letter-spacing: 0 }
+
+.seo-consent {
+  position: fixed;
+  z-index: 100;
+  left: 16px;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  width: min(640px, calc(100% - 32px));
+  margin: auto;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--panel) 96%, transparent);
+  box-shadow: 0 18px 60px #0009;
+  backdrop-filter: blur(12px);
+}
+
+.seo-consent strong { font-family: var(--font-display); font-size: 19px }
+.seo-consent p { margin: 6px 0 14px; color: var(--dim); font-size: 14px }
+.seo-consent p a { color: var(--brand) }
+.seo-consent div { display: flex; gap: 8px; flex-wrap: wrap }
+
+.seo-consent button {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-label);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 9px 13px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.seo-consent button:first-child {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--on-brand);
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  /* The nav used to be `display:none` here, which left a phone visitor on the
+     site's most-landed-on page with no navigation at all beyond the wordmark.
+     It scrolls horizontally instead of disappearing. */
+  .site-header {
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    padding-bottom: 10px;
+  }
+  .site-header nav {
+    width: 100%;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .site-header nav::-webkit-scrollbar { display: none }
+  .site-header nav a { white-space: nowrap }
+
+  .profile { grid-template-columns: 1fr; gap: 26px }
+  .profile > div:first-child { max-width: 260px }
+  main { padding-top: 20px }
+  .description { font-size: 16px }
+  footer span { width: 100%; margin-left: 0 }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0.001ms !important; animation-duration: 0.001ms !important }
+}
