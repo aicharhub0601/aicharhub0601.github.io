@@ -1,0 +1,35 @@
+{
+  "id": "/ja",
+  "name": "AICharHub · AIキャラクターチャットのデータベース",
+  "short_name": "AICharHub",
+  "description": "AIキャラクターの独立系データベース。主要AIチャットプラットフォームの63,000体以上を検索・比較・探索。",
+  "lang": "ja",
+  "dir": "ltr",
+  "start_url": "/ja",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0b0d10",
+  "background_color": "#0b0d10",
+  "categories": ["entertainment", "social", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
