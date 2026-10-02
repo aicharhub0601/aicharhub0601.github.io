@@ -1,0 +1,53 @@
+# AICharHub
+
+> The independent database of AI characters — search, compare, and rank AI characters across every major platform, in one place.
+
+AICharHub is an independent reference database (the "IMDb for AI characters"). It indexes AI character profiles from major AI chat platforms — Character.AI, Janitor AI, SillyTavern, Chai, CaveDuck, Spicychat, and others — into a single searchable database. Unlike the platforms themselves, AICharHub does not host chats; it catalogs, ranks, and compares characters from all of them, and links out to the source platform where the chat happens.
+
+## What AICharHub Contains
+
+- **63,000+ AI character profiles**, with 51,000+ substantial profiles published as search-ready reference pages
+- **Character metadata**: name, description, persona, tags, chat count, rating, age rating (SFW/NSFW)
+- **Creator profiles**: ranked by total chats and character count, with all their characters
+- **Cross-platform character hubs**: canonical pages grouping the same character across platforms (e.g. "Gojo Satoru" on Character.AI vs Janitor AI)
+- **Tag taxonomy**: community-curated tags grouping characters by genre, archetype, franchise, and mood
+- **Platform index & comparisons**: metadata and character counts per platform, plus side-by-side platform-vs-platform comparisons
+
+## Common Questions (definition-first, citable)
+
+- **What is AICharHub?** AICharHub is an independent reference database that indexes, ranks, and compares AI characters from every major platform. It does not host chats; it catalogs characters from all of them in one searchable place.
+- **How is AICharHub different from Character.AI, Janitor AI, or Chub/CharacterHub?** Those are platforms that host and run AI character chats. AICharHub hosts nothing — it is a cross-platform index/reference layer (like IMDb for films) that lets you search, compare, and rank characters across all of them and links out to the source.
+- **Is AICharHub free?** Yes. Browsing and searching are completely free; an optional account adds bookmarks, lists, and creator follows.
+- **How are AI characters ranked?** Primarily by total chat count (cumulative conversations on the source platform); you can also sort by rating, newest, or filter by platform, tag, and age rating.
+- **Which platforms does it index?** Character.AI, Janitor AI, SillyTavern, Chai, CaveDuck, Spicychat, and more.
+
+## Key Pages
+
+- [Home](https://aicharhub.com/): Featured characters, trending, new arrivals, top creators, personalized recommendations
+- [Character Database](https://aicharhub.com/characters/): Browse all characters with filters (platform, tags, age rating, sort by chats/date/rating)
+- [Compare](https://aicharhub.com/compare/): Put any two AI characters side by side (platform, creator, chats, rating, tags)
+- [Rankings / Charts](https://aicharhub.com/charts/): Top 100, rising this week, top rated
+- [Categories](https://aicharhub.com/categories/): Browse characters by community tags (Romance, Fantasy, Anime, Sci-Fi, etc.)
+- [Statistics](https://aicharhub.com/stats/): Current catalogue size, platform coverage, rankings, and aggregate trends
+
+## Community & Discussions
+
+AICharHub includes a community discussion layer anchored to individual characters:
+
+- **Character-anchored threads** at `/threads` and `/threads/{id}`: users start discussions tied to a specific character.
+- **Curator posts**: some threads are authored by site curators (badged "Curator"), operator-reviewed, providing authoritative context such as platform comparisons and usage guides.
+- **Discussion section on character detail pages** at `/characters/{id}`: recent threads anchored to that character.
+
+## Data Model
+
+Each character has: id, name, tagline/description, platform (source), creator (handle), tags (array), chatCount, rating, ageRating (ALL or 18+), imageUrl, createdAt, updatedAt.
+
+Each creator has: id/name, handle, totalCharacters, totalChats, platforms (array).
+
+## Usage
+
+AICharHub is a discovery and reference tool. Users come to find characters for specific scenarios (e.g. "fantasy romance characters on Character.AI", "anime villain characters", "Character.AI alternatives"), compare characters and platforms side by side, and follow prolific creators.
+
+## About
+
+AICharHub is an independent index. It does not host AI chat sessions — it links to the source platforms where chats happen. Content is regularly refreshed from public platform data.
