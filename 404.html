@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Page not found · AICharHub</title>
+    <script>
+      (() => {
+        const backend = "https://aicharhub.com";
+        // The mirror used to live only at aicharhub0601.github.io, where an
+        // unexported route could be forwarded to the live backend. Once the
+        // Pages custom domain itself became aicharhub.com that redirect pointed
+        // straight back to the same missing URL forever. Forward only when the
+        // origins are genuinely different.
+        if (location.origin !== backend) {
+          const target = backend + location.pathname + location.search + location.hash;
+          location.replace(target);
+          return;
+        }
+
+        // A URL that is not in the snapshot is not an error. The site links far
+        // more than the snapshot can hold — 41,550 creators and every tag in six
+        // locales — because a full prerender measured well past GitHub Pages'
+        // 1 GB cap. Hand those to the client-rendered views, which fetch from
+        // the API.
+        //
+        // Characters are NOT in that list any more. This forwarded
+        // `/characters/<id>/` to `/characters/view?id=` when the export held
+        // ~2,200 of them; the SEO generator now writes every public character —
+        // 63,615 pages against 63,735 that qualify — and of the 28,086 character
+        // ids linked anywhere in the export, exactly one had no page, a
+        // character with no passing safety classification, which is supposed to
+        // have none. The view could not have rendered it either: it bails when
+        // the mapper's safety gate strips `imageUrl`. So the rescue had nothing
+        // left to rescue, and the second URL shape cost every character page a
+        // duplicate link to itself.
+        //
+        // `en` is absent from the alternations on purpose: localePrefix is
+        // "as-needed", so the default locale is served unprefixed and the export
+        // has no /en directory at all.
+        //
+        // Each pattern is anchored and shaped so it cannot match the view route
+        // it redirects to — `view` is not digits, and the tag/creator patterns
+        // exclude it explicitly. Without that this loops forever, in production
+        // only, on exactly the URLs this exists to rescue.
+        const LOCALE = "(?:\\/(ko|ja|zh|es|pt))?";
+        const routes = [
+          [new RegExp(`^${LOCALE}\\/tags\\/(?!view\\/?$)([^/]+)\\/?$`), "/tags/view?tag="],
+          [new RegExp(`^${LOCALE}\\/creators\\/(?!view\\/?$)([^/]+)\\/?$`), "/creators/view?id="],
+        ];
+
+        for (const [pattern, target] of routes) {
+          const match = location.pathname.match(pattern);
+          if (!match) continue;
+          const prefix = match[1] ? "/" + match[1] : "";
+          // The captured segment is still percent-encoded from the URL; decode
+          // once so encodeURIComponent re-encodes it correctly for the query
+          // string. "Entertainment & Gaming" arrives as %20 and & — both of
+          // which mean something different in a query string than in a path.
+          location.replace(
+            prefix + target + encodeURIComponent(decodeURIComponent(match[2])),
+          );
+          return;
+        }
+
+        // Last resort: drop an unknown locale prefix.
+        //
+        // High-cardinality detail routes are snapshotted in the default locale
+        // only, but the language switcher offers all six on every page — so
+        // `/ko/platforms/spicychat` is advertised and was never built. Serving
+        // the default-locale page is a worse answer than a real translation and
+        // a much better one than a dead end.
+        //
+        // Safe to do blindly: if the unprefixed path is also missing, this file
+        // runs again with no prefix left to strip, matches nothing, and shows
+        // the not-found page below. No loop.
+        const stripped = location.pathname.replace(
+          new RegExp(`^${LOCALE}(?=\\/)`),
+          "",
+        );
+        if (stripped !== location.pathname && stripped !== "") {
+          location.replace(stripped + location.search + location.hash);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Page not found</h1>
+      <p>This page has not been added to the static snapshot yet.</p>
+      <p><a id="fallback" href="https://aicharhub.com/">Return to AICharHub</a></p>
+    </main>
+    <script>
+      if (location.origin !== "https://aicharhub.com") {
+        document.getElementById("fallback").href =
+          "https://aicharhub.com" + location.pathname + location.search + location.hash;
+      }
+    </script>
+  </body>
+</html>

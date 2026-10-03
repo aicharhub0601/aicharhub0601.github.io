@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://aicharhub.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/" />
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/characters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/characters/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/characters/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/characters/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/characters/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/characters/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/characters/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/characters/" />
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/threads/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/threads/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/threads/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/threads/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/threads/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/threads/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/threads/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/threads/" />
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/categories/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/categories/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/categories/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/categories/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/categories/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/categories/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/categories/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/categories/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/browse/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/browse/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/browse/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/browse/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/browse/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/browse/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/browse/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/browse/" />
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/charts/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/charts/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/charts/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/charts/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/charts/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/charts/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/charts/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/charts/" />
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/charts/top/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/charts/top/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/charts/top/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/charts/top/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/charts/top/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/charts/top/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/charts/top/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/charts/top/" />
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/charts/rising/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/charts/rising/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/charts/rising/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/charts/rising/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/charts/rising/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/charts/rising/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/charts/rising/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/charts/rising/" />
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/charts/top-rated/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/charts/top-rated/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/charts/top-rated/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/charts/top-rated/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/charts/top-rated/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/charts/top-rated/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/charts/top-rated/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/charts/top-rated/" />
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/charts/community/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/charts/community/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/charts/community/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/charts/community/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/charts/community/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/charts/community/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/charts/community/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/charts/community/" />
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/fandoms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/fandoms/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/fandoms/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/fandoms/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/fandoms/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/fandoms/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/fandoms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/fandoms/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/lists/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/lists/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/lists/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/lists/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/lists/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/lists/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/lists/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/lists/" />
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/what-is-aicharhub/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/what-is-aicharhub/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/what-is-aicharhub/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/what-is-aicharhub/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/what-is-aicharhub/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/what-is-aicharhub/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/what-is-aicharhub/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/what-is-aicharhub/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/how-many-ai-characters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/how-many-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/how-many-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/how-many-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/how-many-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/how-many-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/how-many-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/how-many-ai-characters/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/which-platform-has-most-characters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/which-platform-has-most-characters/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/which-platform-has-most-characters/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/which-platform-has-most-characters/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/which-platform-has-most-characters/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/which-platform-has-most-characters/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/which-platform-has-most-characters/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/which-platform-has-most-characters/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/best-character-ai-alternative/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/best-character-ai-alternative/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/best-character-ai-alternative/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/best-character-ai-alternative/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/best-character-ai-alternative/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/best-character-ai-alternative/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/best-character-ai-alternative/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/best-character-ai-alternative/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/most-popular-ai-characters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/most-popular-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/most-popular-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/most-popular-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/most-popular-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/most-popular-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/most-popular-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/most-popular-ai-characters/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/how-to-find-ai-characters/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/how-to-find-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/how-to-find-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/how-to-find-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/how-to-find-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/how-to-find-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/how-to-find-ai-characters/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/how-to-find-ai-characters/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/are-ai-character-platforms-free/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/are-ai-character-platforms-free/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/are-ai-character-platforms-free/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/are-ai-character-platforms-free/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/are-ai-character-platforms-free/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/are-ai-character-platforms-free/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/are-ai-character-platforms-free/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/are-ai-character-platforms-free/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/questions/which-platforms-does-aicharhub-cover/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/questions/which-platforms-does-aicharhub-cover/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/questions/which-platforms-does-aicharhub-cover/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/questions/which-platforms-does-aicharhub-cover/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/questions/which-platforms-does-aicharhub-cover/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/questions/which-platforms-does-aicharhub-cover/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/questions/which-platforms-does-aicharhub-cover/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/questions/which-platforms-does-aicharhub-cover/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/worldcup/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/worldcup/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/worldcup/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/worldcup/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/worldcup/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/worldcup/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/worldcup/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/worldcup/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/roulette/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/roulette/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/roulette/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/roulette/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/roulette/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/roulette/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/roulette/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/roulette/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/about/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/about/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/about/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/about/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/press/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/press/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/press/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/press/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/press/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/press/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/press/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/press/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/advertise/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/advertise/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/advertise/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/advertise/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/advertise/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/advertise/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/advertise/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/advertise/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/compare/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/compare/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/compare/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/compare/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/compare/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/compare/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/compare/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/compare/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aicharhub.com/stats/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aicharhub.com/stats/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aicharhub.com/ko/stats/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aicharhub.com/ja/stats/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aicharhub.com/zh/stats/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aicharhub.com/es/stats/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aicharhub.com/pt/stats/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aicharhub.com/stats/" />
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
