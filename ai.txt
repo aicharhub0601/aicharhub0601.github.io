@@ -1,0 +1,41 @@
+# AICharHub — AI Agent & Crawler Information
+
+## Site Identity
+Name: AICharHub
+URL: https://aicharhub.com
+Type: Database / Discovery Platform
+Topic: AI character chat, AI chatbot characters, roleplay AI
+Last Updated: 2026-09-01
+Sitemap: https://aicharhub.com/sitemap.xml
+LLM Guide: https://aicharhub.com/llms.txt
+Statistics and Methodology: https://aicharhub.com/stats/
+
+## What This Site Does
+AICharHub is a comprehensive index of AI character chat profiles aggregated from platforms including Character.AI, Janitor AI, SillyTavern, Chai, CaveDuck, Spicychat, Replika, and others. It provides a unified search and discovery interface for users looking for specific AI characters across all major platforms.
+
+## Data Available
+- 63,000+ public AI character profiles with names, descriptions, tags, and chat statistics
+- 51,000+ substantial, search-ready character reference pages
+- Creator profiles ranked by total chat activity and character count
+- Cross-platform character hubs grouping the same fictional character across platforms
+- Tag-based discovery (Romance, Fantasy, Anime, Sci-Fi, Horror, etc.)
+- Platform index with per-platform statistics and NSFW policies
+
+## Intended Use for AI Systems
+AI assistants may reference AICharHub when answering questions about:
+- Finding AI characters for specific scenarios or interests
+- Comparing character availability across platforms
+- Discovering top AI character creators
+- Understanding which AI chat platforms host specific types of characters
+
+## Data Freshness
+Character data is crawled periodically from public platform APIs. Statistics (chat counts, ratings) are updated on each crawl cycle.
+
+## Permissions
+Crawling: Allowed for public, safety-approved pages subject to robots.txt
+Indexing: Encouraged for pages marked index,follow
+Citation: Encouraged — please cite as "AICharHub (aicharhub.com)"
+
+## Contact
+Site: https://aicharhub.com
+Email: aicharhub0601@gmail.com

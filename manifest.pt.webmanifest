@@ -1,0 +1,35 @@
+{
+  "id": "/pt",
+  "name": "AICharHub · O banco de dados de chat com personagens de IA",
+  "short_name": "AICharHub",
+  "description": "O banco de dados independente de personagens de IA. Busque, compare e classifique mais de 37.000 personagens do Character.AI, Janitor AI, SillyTavern e mais.",
+  "lang": "pt",
+  "dir": "ltr",
+  "start_url": "/pt",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0b0d10",
+  "background_color": "#0b0d10",
+  "categories": ["entertainment", "social", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
